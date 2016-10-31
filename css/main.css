@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Trirong:100,400);
+@import url(http://weloveiconfonts.com/api/?family=fontelico);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+body {
+    font-family: 'Trirong', serif;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    flex-wrap: wrap;
+    border-bottom: 1.8px solid #99b4b4;
+    width: 100%;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family: 'fontelico', sans-serif;
+    font-size: 95px;
+    color: #99b4b4;
+}
+
+.logo {
+    width: 100%;
+    height: 110px;
+}
+
+.name-block {
+    width: 100%;
+    padding-left: 0;
+}
+
+.name {
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 100;
+    margin: 0;
+}
+
+.sub {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 1px;
+}
+
+article {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    flex-direction: column;
+}
+
+figure{
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.4em;
+    text-align: center;
+    line-height: 1.6em;
+    color: #d6c5c5;
+}
+
+p{
+    font-size: 0.4em;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-bottom: 29px;
+}
+
+.box {
+    width: 100%;
+}
+
+._1 {
+    width: 100%;
+    padding-top: 13px;
+}
+
+._2 {
+    width: 50%;
+    order: 1;
+}
+
+._3 {
+    width: 50%;
+    order: 2;
+}
+
+._4 {
+    width: 50%;
+    order: 3;
+}
+
+._5 {
+    width: 50%;
+    order: 4;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+footer {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border-top: 1.8px solid #99b4b4;
+    padding-top: 5px;
+}
+
+.zocial-twitter {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    justify-content: center;
+    width: 25%;
+}
+
+.zocial-digg {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    justify-content: center;
+    width: 25%;
+}
+
+.zocial-facebook{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    justify-content: center;
+    width: 25%;
+}
+
+.zocial-googleplus {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    justify-content: center;
+    width: 25%;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+    color: #99b4b4;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #c3c3c3;
+}
+
+.side {
+    background-color: #99b4b4;
+    color: white;
+}
+
+a#menu svg {
+    width: 40px;
+    fill: #000;
+}
+
+nav, main {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+/*
+* Off-canvas layout styles.
+*/
+/* Since we're mobile-first, by default, the drawer is hidden. */
+nav {
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-400px, 0);
+    transform: translate(-400px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+}
+
+nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+@media screen and (min-width: 445px) {
+    .logo {
+        width: 100%;
+        height: 110px;
+    }
+
+
+    .name {
+        font-size: 44px;
+        text-align: left;
+        font-weight: 100;
+    }
+
+    .sub {
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 4px;
+    }
+
+    p{
+        font-size: 0.5em;
+    }
+
+    ._1 {
+        width: 100%;
+    }
+
+    ._2 {
+        width: 100%;
+        order: 1;
+    }
+
+    ._3 {
+        width: 50%;
+        order: 2;
+    }
+
+    ._4 {
+        width: 50%;
+        order: 3;
+        padding-bottom: 0;
+    }
+
+    ._5 {
+        width: 100%;
+        order: 4;
+    }
+
+}
+
+@media screen and (min-width: 660px) {
+    /* fontelico */
+    [class*="fontelico-"]:before {
+        padding-left: 5px;
+    }
+
+    .logo {
+        width: 33.33%;
+        height: 110px;
+        order: -1;
+    }
+
+    .name-block{
+        width: 66.66%;
+    }
+
+    .name {
+        font-size: 44px;
+        text-align: right;
+        font-weight: 100;
+    }
+
+    .sub {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        text-align: right;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.5em;
+    }
+
+    p {
+        font-size: 0.6em;
+    }
+
+     /* We open the drawer. */
+    nav {
+      position:relative;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    /* We use Flexbox on the parent. */
+    body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+    }
+
+    main {
+      width: auto;
+      /* Flex-grow streches the main content to fill all available space. */
+      flex-grow: 1;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-eqiv="X-UA-Compatible" content="text/html; charset=UTF-8">
+        <title> Portfolio Project </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    </head>
+    <body>
+        <nav id="drawer" class="side">
+            <h2>Off Canvas</h2>
+            <p>Click outside the drawer to close</p>
+        </nav>
+        <main>
+            <a id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+                </svg>
+            </a>
+            <div class="container">
+                <header>
+                    <div class="logo">
+                        <div class="fontelico-spin1"></div>
+                    </div>
+                    <div class="name-block">
+                        <h1 class="name">Charles Hudson Baker</h1>
+                        <h2 class="sub">Front-End FlowBot</h2>
+                    </div>
+                </header>
+                <article class="box _1">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 445px)" srcset="images/cross-1600_large_2x.jpg 2x, images/cross-800_large_1x.jpg" />
+                            <source media="(min-width: 400px)" srcset="images/cross-500_med_1x.jpg" />
+                            <source media="(min-width: 0px)" srcset="images/cross-400_small.jpg" />
+                            <img src="images/cross-400_small.jpg" alt="hikers on Mount of the Holy Cross">
+                        </picture>
+                        <figcaption>hello mate</figcaption>
+                    </figure>
+                    <!-- Hume's second Enquiry, Appendix 1 -->
+                    <p>Taste, as it gives pleasure or pain, and thereby constitutes happiness or misery, becomes a motive to action, and is the first spring or impulse to desire and volition. From circumstances and relations, known or supposed, the former leads us to the discovery of the concealed and unknown: after all circumstances and relations are laid before us, the latter makes us feel from the whole a new sentiment of blame or approbation.</p>
+                </article>
+                <article class="box _2">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 445px)" srcset="images/shoes-1600_large_2x.jpg 2x, images/shoes-800_large_1x.jpg" />
+                            <source media="(min-width: 400px)" srcset="images/shoes-500_med_1x.jpg" />
+                            <source media="(min-width: 0px)" srcset="images/shoes-400_small.jpg" />
+                            <img src="images/shoes-400_small.jpg" alt="view of 2 climbers shoes">
+                        </picture>
+                        <figcaption>hello mate</figcaption>
+                    </figure>
+                    <p>I would like a short word, if you please.</p>
+                </article>
+                <article class="box _3">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 660px)" srcset="images/prince-1600_large_2x.jpg 2x, images/prince-800_large_1x.jpg" />
+                            <source media="(min-width: 445px)" srcset="images/prince-500_alt_med_1x.jpg" />
+                            <source media="(min-width: 400px)" srcset="images/prince-500_med_1x.jpg" />
+                            <source media="(min-width: 0px)" srcset="images/prince-400_small.jpg" />
+                            <img src="images/prince-400_small.jpg" alt="view of the mountains near Mount Princeton">
+                        </picture>
+                        <figcaption>hello mate</figcaption>
+                    </figure>
+                    <p>I would like a cheeseburger, if you please.</p>
+                </article>
+                <article class="box _4">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 660px)" srcset="images/boy-1600_large_2x.jpg 2x, images/boy-800_large_1x.jpg" />
+                            <source media="(min-width: 445px)" srcset="images/boy-500_alt_med_1x.jpg" />
+                            <source media="(min-width: 400px)" srcset="images/boy-500_med_1x.jpg" />
+                            <source media="(min-width: 0px)" srcset="images/boy-400_small.jpg" />
+                            <img src="images/boy-400_small.jpg" alt="boy putting his climbing shoes on in preparation">
+                        </picture>
+                        <figcaption>hello mate</figcaption>
+                    </figure>
+                    <p>I would like to be a developer, if you please.</p>
+                </article>
+                <article class="box _5">
+                    <figure>
+                        <picture>
+                            <source media="(min-width: 445px)" srcset="images/pink-1600_large_2x.jpg 2x, images/pink-800_large_1x.jpg" />
+                            <source media="(min-width: 400px)" srcset="images/pink-500_med_1x.jpg" />
+                            <source media="(min-width: 0px)" srcset="images/pink-400_small.jpg" />
+                            <img src="images/pink-400_small.jpg" alt="birds eye view of girl in pink helmet climbing">
+                        </picture>
+                        <figcaption>hello mate</figcaption>
+                    </figure>
+                    <p>This is a nice page, if I do say so myself</p>
+                </article>
+            </div>
+            <footer>
+                <a class="zocial-twitter"></a>
+                <a class="zocial-digg"></a>
+                <a class="zocial-facebook"></a>
+                <a class="zocial-googleplus"></a>
+            </footer>
+        </main>
+        <script>
+            /*
+            * Open the drawer when the menu ison is clicked.
+            */
+            var menu = document.querySelector('#menu');
+            var main = document.querySelector('main');
+            var drawer = document.querySelector('#drawer');
+
+            menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+            });
+            main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+            });
+    </script>
+    </body>
+</html>
